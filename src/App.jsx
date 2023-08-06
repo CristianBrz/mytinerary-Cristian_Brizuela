@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import './App.css'
+import Home from './pages/Home';
+import BodyLay from './layouts/BodyLay';
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      
+      <BodyLay>
+        <Home />
+      </BodyLay>
     </>
   );
 }

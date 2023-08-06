@@ -4,7 +4,9 @@ import { Button } from 'reactstrap';
 const Hero = () => {
 	return (
     <>
-      <div className="vh-100 border">Hero</div>
+      <div className="vh-100 border">
+        <img src="" alt="" />
+      </div>
 
     </>
   );

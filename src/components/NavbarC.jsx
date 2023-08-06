@@ -17,6 +17,7 @@ import {
 	OffcanvasHeader,
 	OffcanvasBody,
 } from "reactstrap";
+import OffcanvasBtn from "./OffcanvasBtn";
 
 function Example(args) {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,15 +65,8 @@ function Example(args) {
           {/* <NavbarText>Simple Text</NavbarText> */}
         </Collapse>
       </Navbar>
-
-      <Button
-        className="me-auto rounded-circle"
-        style={{
-          height: 50,
-          width: 50,
-        }}>
-        <i className="bi bi-person-bounding-box"></i>
-      </Button>
+			
+			<OffcanvasBtn></OffcanvasBtn>
 
     </div>
   );

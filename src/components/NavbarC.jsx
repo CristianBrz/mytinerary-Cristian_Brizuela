@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import OffcanvasBtn from "../components/OffcanvasBtn";
+import { Link as Anchor, NavLink } from "react-router-dom";
 
 import {
   Collapse,
@@ -8,13 +9,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
-	Button,
+  Button,
 } from "reactstrap";
 
 function NavbarC(args) {
@@ -40,22 +35,20 @@ function NavbarC(args) {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ms-auto d-flex align-items-center gap-2" navbar>
-            <NavItem>
-              {/* <NavLink href="#">Home</NavLink> */}
-              <Button
+            {/* <Button
                 className="fw-semibold rounded-pill px-4"
                 color=""
                 children="Home"
-              />
-            </NavItem>
-            <NavItem>
-              {/* <NavLink href="">Cities</NavLink> */}
-              <Button
-                className="fw-semibold rounded-pill px-4"
-                color=""
-                children="Cities"
-              />
-            </NavItem>
+                to="/"
+                tag={Link}
+              /> */}
+            <NavLink className="btn rounded-pill px-4 text-white" to="/">
+              Home
+            </NavLink>
+            <NavLink className="btn rounded-pill px-4 text-white" to="/cities">
+              Cities
+            </NavLink>
+
             {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Options
@@ -67,12 +60,11 @@ function NavbarC(args) {
                 <DropdownItem>Reset</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown> */}
-          <OffcanvasBtn></OffcanvasBtn>
+            <OffcanvasBtn></OffcanvasBtn>
           </Nav>
           {/* <NavbarText>Simple Text</NavbarText> */}
         </Collapse>
       </Navbar>
-
     </div>
   );
 }

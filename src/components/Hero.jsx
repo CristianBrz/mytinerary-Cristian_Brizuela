@@ -1,5 +1,7 @@
 import React from 'react'
 import { Button, Card, CardImg, CardImgOverlay, CardText, CardTitle } from 'reactstrap';
+import { Link as Anchor, NavLink } from "react-router-dom";
+
 
 const Hero = () => {
 	return (
@@ -33,9 +35,10 @@ const Hero = () => {
               planning your next trip has never been easier.
             </CardText>
             <div className="d-flex justify-content-center">
-              <Button
+              <Anchor
                 children="🌍🏙️ Discover the Magic of Cities! 🌆✨"
-                className=" btn-success w-75 shadow-s rounded-pill"
+                className="btn btn-success w-75 shadow-s rounded-pill"
+                to="/cities"
               />
             </div>
           </div>

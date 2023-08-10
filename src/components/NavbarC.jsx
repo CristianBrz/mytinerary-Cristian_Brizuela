@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import OffcanvasBtn from "../components/OffcanvasBtn";
+
 import {
   Collapse,
   Navbar,
@@ -13,20 +15,16 @@ import {
   DropdownItem,
   NavbarText,
 	Button,
-	Offcanvas,
-	OffcanvasHeader,
-	OffcanvasBody,
 } from "reactstrap";
-import OffcanvasBtn from "./OffcanvasBtn";
 
-function Example(args) {
+function NavbarC(args) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="d-flex align-items-center ">
-      <Navbar className="container border" expand="md">
+    <div className="d-flex align-items-center bg-black bg-opacity-25 bg-blur fixed-top">
+      <Navbar className="container" expand="md">
         <NavbarBrand className="d-flex align-items-center gap-1" href="#">
           <img
             alt="logoLogo"
@@ -36,7 +34,7 @@ function Example(args) {
               width: 40,
             }}
           />
-          <span>MyTinerary</span>
+          <span className="fs-3">MyTinerary</span>
         </NavbarBrand>
 
         <NavbarToggler onClick={toggle} />
@@ -44,11 +42,19 @@ function Example(args) {
           <Nav className="ms-auto gap-2" navbar>
             <NavItem>
               {/* <NavLink href="#">Home</NavLink> */}
-              <Button color="" children="Home" />
+              <Button
+                className="fw-semibold rounded-pill px-4"
+                color=""
+                children="Home"
+              />
             </NavItem>
             <NavItem>
               {/* <NavLink href="">Cities</NavLink> */}
-              <Button color="" children="Cities" />
+              <Button
+                className="fw-semibold rounded-pill px-4"
+                color=""
+                children="Cities"
+              />
             </NavItem>
             {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
@@ -65,11 +71,10 @@ function Example(args) {
           {/* <NavbarText>Simple Text</NavbarText> */}
         </Collapse>
       </Navbar>
-			
-			<OffcanvasBtn></OffcanvasBtn>
 
+      <OffcanvasBtn></OffcanvasBtn>
     </div>
   );
 }
 
-export default Example;
+export default NavbarC;

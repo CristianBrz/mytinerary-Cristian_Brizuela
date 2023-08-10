@@ -2,18 +2,17 @@ import React from "react";
 import NavbarC from "../components/NavbarC";
 import FooterC from "../components/FooterC";
 
+
 const BodyLay = ({ children }) => {
   return (
     <>
-      <header className="bg-dark bg-opacity-25">
+      <header className="">
         <NavbarC />
       </header>
 
-      <main>
-        {children}
-      </main>
+      <main className="bg-">{children}</main>
 
-      <footer>
+      <footer className="bg-secondary m-0 p-0 w-100 h-100">
         <FooterC />
       </footer>
     </>

@@ -1,0 +1,25 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.bg-blur {
+  /* filter: blur(5px); */
+  backdrop-filter: blur(10px);
+}
+
+.shadow-s:hover {
+  transition-duration: 0.1s;
+  box-shadow: 0px 0px 15px 11px rgba(82, 236, 68, 0.73);
+  transform: scale(1.1);
+}
+
+.shadow-sx {
+  box-shadow: 0px 0px 15px 11px rgb(73, 73, 73);
+  border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
+}
+
+/* .fixed-top {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+} */

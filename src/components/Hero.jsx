@@ -8,7 +8,7 @@ const Hero = () => {
         <CardImg
           className="vh-100"
           alt="Card image cap"
-          src="https://picsum.photos/1600/900?traveller"
+          src="https://images.pexels.com/photos/1487770/pexels-photo-1487770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           style={{
             height: 270,
           }}
@@ -20,7 +20,13 @@ const Hero = () => {
             style={{
               maxWidth: 700,
             }}>
-            <CardTitle tag="h3">Find the perfect destination</CardTitle>
+            <CardTitle className="text-center" tag="h1">
+              MyTinerary
+            </CardTitle>
+            <CardTitle tag="h4">
+              Find your perfect trip, designed by insiders who know and love
+              their cities!
+            </CardTitle>
             <CardText className="">
               Our app Will help you find the perfect path for your next trip.
               With an easy-to-use interface and a host of itinerary options,

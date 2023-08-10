@@ -39,7 +39,7 @@ function NavbarC(args) {
 
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ms-auto gap-2" navbar>
+          <Nav className="ms-auto d-flex align-items-center gap-2" navbar>
             <NavItem>
               {/* <NavLink href="#">Home</NavLink> */}
               <Button
@@ -67,12 +67,12 @@ function NavbarC(args) {
                 <DropdownItem>Reset</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown> */}
+          <OffcanvasBtn></OffcanvasBtn>
           </Nav>
           {/* <NavbarText>Simple Text</NavbarText> */}
         </Collapse>
       </Navbar>
 
-      <OffcanvasBtn></OffcanvasBtn>
     </div>
   );
 }

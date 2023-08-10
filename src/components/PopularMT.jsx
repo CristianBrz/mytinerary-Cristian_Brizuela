@@ -139,7 +139,7 @@ const PopularMT = () => {
         );
       });
   return (
-    <div className="vh-100 my-5">
+    <div className="my-5">
       <h2 className="text-center">Popular Mytineraries</h2>
       <Carousel
         dark

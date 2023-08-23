@@ -155,13 +155,13 @@ const PopularMT = () => {
         />
         {slides}
         <CarouselControl
-          className="ms-sm-5 ps-sm-5"
+          className="ms-sm-3 ps-sm-3"
           direction="prev"
           directionText="Previous"
           onClickHandler={previous}
         />
         <CarouselControl
-          className="me-sm-5 pe-sm-5"
+          className="me-sm-3 pe-sm-3"
           direction="next"
           directionText="Next"
           onClickHandler={next}

@@ -23,7 +23,7 @@ function NavbarC(args) {
         <NavbarBrand className="d-flex align-items-center gap-1" href="#">
           <img
             alt="logoLogo"
-            src="./assets/viaje_3.png"
+            src="../viaje_3.png"
             style={{
               height: 40,
               width: 40,

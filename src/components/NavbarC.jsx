@@ -29,7 +29,7 @@ function NavbarC(args) {
               width: 40,
             }}
           />
-          <span className="fs-3">MyTinerary</span>
+          <span className="fs-3 text-white">MyTinerary</span>
         </NavbarBrand>
 
         <NavbarToggler onClick={toggle} />

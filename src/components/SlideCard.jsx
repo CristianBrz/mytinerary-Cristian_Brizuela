@@ -13,6 +13,7 @@ import {
 } from "reactstrap";
 
 const SlideCard = ({ cities }) => {
+  // console.log(cities)
   return (
     <div className="container">
       <div className="row row-cols-1 row-cols-md-2 g-4 py-2 mb-5 mx-sm-5 px-5">

@@ -23,3 +23,12 @@
   position: fixed;
   top: 0;
 } */
+
+.text-justified {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.text-gray{
+  color: #d3d3d3;
+}
